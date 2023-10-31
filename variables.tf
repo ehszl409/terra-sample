@@ -1,7 +1,7 @@
 variable "aws_region" {
   type        = string
   description = "AWS REGIONS CODE. (DEFAULT: AP-NORTHEAST-2)"
-  default     = "ap-northeast-2"
+  default     = "ap-southeast-1"
   validation {
     condition     = contains(["ap-southeast-1"], var.aws_region)
     error_message = "사용 가능한 리전은 ap-southeast-1 입니다.."

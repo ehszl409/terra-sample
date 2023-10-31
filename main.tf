@@ -22,19 +22,19 @@ provider "aws" {
 
 # Create a VPC
 module "vpc" {
-  source       = "./aws_vpc/"
-  cidr_network = "192.168.0.0/16"
+  source       = "github.com/ehszl409/tf_aws_vpc.git"
+  #cidr_network = "192.168.0.0/16"
 }
 
-module "subnet" {
-  source     = "./aws_subnet/"
-  cidr_block = "192.168.0.0/24"
-  vpc_id     = module.vpc.vpc_id
-}
+# module "subnet" {
+#   source     = "./aws_subnet/"
+#   cidr_block = "192.168.0.0/24"
+#   vpc_id     = module.vpc.vpc_id
+# }
 
 module "keypair" {
-  source   = "./aws_keypair/"
-  key_name = "terra_gen_key"
+  source   = "github.com/ehszl409/tf_aws_keypair.git"
+  #key_name = "terra_gen_key"
 }
 
 # resource "aws_subnet" "terra_private_subnet" {
