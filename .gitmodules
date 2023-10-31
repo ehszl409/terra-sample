@@ -1,0 +1,6 @@
+[submodule "tf_aws_vpc"]
+	path = tf_aws_vpc
+	url = https://github.com/ehszl409/tf_aws_vpc.git
+[submodule "tf_aws_keypair"]
+	path = tf_aws_keypair
+	url = https://github.com/ehszl409/tf_aws_keypair.git
