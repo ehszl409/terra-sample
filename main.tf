@@ -41,7 +41,7 @@ module "keypair" {
 }
 
 module "compute1" {
-  source    = "./aws_ec2"
+  source    = "github.com/ehszl409/tf_aws_ec2.git"
   vpc_id    = module.vpc.vpc_id
   subnet_id = module.vpc.public_subnet[0].id
   az        = module.vpc.public_subnet[0].availability_zone
@@ -49,7 +49,7 @@ module "compute1" {
 }
 
 module "compute2" {
-  source     = "./aws_ec2"
+  source     = "github.com/ehszl409/tf_aws_ec2.git"
   vpc_id     = module.vpc.vpc_id
   subnet_id  = module.vpc.private_subnet[0].id
   az         = module.vpc.private_subnet[0].availability_zone
