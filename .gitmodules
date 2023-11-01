@@ -4,3 +4,6 @@
 [submodule "tf_aws_keypair"]
 	path = tf_aws_keypair
 	url = https://github.com/ehszl409/tf_aws_keypair.git
+[submodule "tf_aws_ec2"]
+	path = tf_aws_ec2
+	url = https://github.com/ehszl409/tf_aws_ec2.git
